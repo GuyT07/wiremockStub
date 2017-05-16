@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/2010-04-01/Accounts/{AccountSid}/Calls"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "name":"BOB",
+      "date":"now"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "transformers":["exampleTransformer"]
+  }
+}
