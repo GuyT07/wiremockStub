@@ -20,10 +20,6 @@ import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMoc
  */
 public class WireMockRuleWrapper extends WireMockRule {
 
-
-//    @Rule
-//    public WireMockRule d = new WireMockRule(wireMockConfig().port(8089).extensions(StubResponseTransformerWithRequestBody.class));
-
     public static WireMockRule wrap(Class<ResponseTransformer>... classes){
         return new WireMockRule(wireMockConfig().port(8089).extensions(allTransformers(classes)));
     }
